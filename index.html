@@ -102,6 +102,104 @@
 
     // Start your code here
     // You may move this JS to another file if you wish
+    class MyError extends Error{
+      constructor(message){
+        super(message);
+        this.name = "MyError"
+      }
+    }
+
+    //console log
+    errorBtns[0].addEventListener('click', e => {
+      console.log('hello-world');
+    });
+
+    //console error
+    errorBtns[1].addEventListener('click', e => {
+      console.error('There was an error');
+    });
+
+    //console count
+    errorBtns[2].addEventListener('click', e => {
+      console.count('how many apples')
+    });
+
+    //console warn
+    errorBtns[3].addEventListener('click', e => {
+      console.warn('Warning! Go back!');
+    });
+
+    //console assert
+    errorBtns[4].addEventListener('click', e => {
+      console.assert(2 > 4);
+    });
+
+    //console ckear
+    errorBtns[5].addEventListener('click', e => {
+      console.clear();
+    });
+
+    //console dir
+    errorBtns[6].addEventListener('click', e => {
+      console.dir(document.head);
+    });
+
+    //console dirxml
+    errorBtns[7].addEventListener('click', e => {
+      console.dirxml(document);
+    })
+
+    //console group
+    errorBtns[8].addEventListener('click', e => {
+      console.group('mygroup');
+    })
+
+    //console group end
+    errorBtns[9].addEventListener('click', e => {
+      console.groupEnd('mygroup');
+    })
+
+    //console table
+    errorBtns[10].addEventListener('click', e => {
+      console.table([
+        {
+          first: 'randy',
+          last: 'smith',
+          grade: 'freshman'
+        },
+        {
+          first: 'katie',
+          last: 'zhang',
+          grade: 'junior'
+        },
+      ]);
+    });
+
+    //console time
+    errorBtns[11].addEventListener('click', e => {
+      console.time();
+    });
+
+    //console time end
+    errorBtns[12].addEventListener('click', e => {
+      console.timeEnd();
+    });
+
+    //console trace
+    errorBtns[13].addEventListener('click')
+
+
+
+  
+
+
+
+
+
+
+
+
+
   </script>
 </body>
 

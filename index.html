@@ -186,7 +186,29 @@
     });
 
     //console trace
-    errorBtns[13].addEventListener('click')
+    errorBtns[13].addEventListener('click', e => {
+      console.trace();
+    });
+
+    //console trigger
+    errorBtns[14].addEventListener('click', e => {
+      //error using divide by 0 function below
+      try {
+        cannotdivide0(0, 10);
+      }
+      catch(MyError) {
+        throw MyError;
+      }
+
+    });
+
+    //test division function
+    function cannotdivide0(x, y) {
+      let z = y/x;
+      if(z == Infinity) {
+        throw new MyError('Cannot Divide by 0');
+      }
+    };
 
 
 
